@@ -335,7 +335,7 @@ _fzf_complete_rosloggerlevelset ()
 [ -n "$BASH" ] && complete -F _fzf_complete_rosnode -o default -o bashdefault rosnode
 [ -n "$BASH" ] && complete -F _fzf_complete_roscd -o "nospace" -o bashdefault  roscd
 [ -n "$BASH" ] && complete -F _fzf_complete_rosloggerlevelset -o default -o bashdefault rosloggersetlevel
-if [ $USE_CATKIN_TOOLS ]; then
-    [ -n "$BASH" ] && complete -F _fzf_complete_srcpackages -o default -o bashdefault catkin_ws_make
-    [ -n "$BASH" ] && complete -F _fzf_complete_srcpackages -o default -o bashdefault catkin_release_make
-fi
+# if [ $USE_CATKIN_TOOLS ]; then
+#     [ -n "$BASH" ] && complete -F _fzf_complete_srcpackages -o default -o bashdefault catkin_ws_make
+#     [ -n "$BASH" ] && complete -F _fzf_complete_srcpackages -o default -o bashdefault catkin_release_make
+# fi
