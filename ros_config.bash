@@ -4,19 +4,6 @@
 export ROSCONSOLE_FORMAT='[${node} ${severity} ${time}]: ${message}'
 export ROS_LANG_DISABLE=genlisp # no one is using lisp...
 
-alias dynreconf='rosrun rqt_reconfigure rqt_reconfigure'
-alias rv="tmuxrun rviz"
-
-alias rosderp='rosdep install --from-paths "$ROS_WORKSPACE" --ignore-src -y'
-alias rosaction="rostopic list | grep '/result\|/goal\|/status\|/feedback\|/cancel'"
-
-alias core="tmuxrun roscore"
-
-alias ign="touch CATKIN_IGNORE"
-
-alias rosmaster="change_rosmaster_to"
-alias ros="change_rosmaster_to"
-
 function rostmuxlaunch {
     tmux has-session -t $1 2>/dev/null
     if [ "$?" -eq 1 ] ; then
