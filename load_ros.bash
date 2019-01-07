@@ -11,7 +11,7 @@ command_exists () {
     hash "$1" &> /dev/null ;
 }
 
-export ROS_WORKSPACE=$HOME/ros/src
+export ROS_WORKSPACE=$HOME/git/ipa_navigation_catkin/src
 export HIDE_PRINTOUTS=0
 
 loadif ros_config.bash
